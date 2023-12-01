@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import FirstPage from './Components/firstpage.js';
+import SecondPage from './Components/secondpage.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FirstPage />
+    <SecondPage />
   </React.StrictMode>
 );
 

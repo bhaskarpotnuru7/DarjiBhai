@@ -9,9 +9,11 @@
 }
 .brand-name{
     font-family: cursive;
+    color: #ffffff;
     font-size: 25px;
     padding-top: 35px;
-    line-height: 0px;
+    line-height: 20px;
+    padding-bottom: 20px;
     
 }
 .copy-right{

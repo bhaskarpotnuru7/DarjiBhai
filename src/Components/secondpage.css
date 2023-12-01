@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.nav-bg{
+    background-color: #664444;
+    background-size: cover;
+}
+
+.user-profile {
+    color : #ffffff;
+    font-size: 13px;
+}
+.logo-name{
+    font-family: cursive;
+    color: #ffffff;
+    font-size: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.user-profile-icon{
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.second-page-design-container{
+    
+    text-align: center;
+    margin-top: 20px;
+}
+.second-page-design-container h1{
+    font-size: 25px;
+    padding-top: 35px;
+}
+.second-page-design-container p{
+    font-size: 18px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.second-page-image-container{
+    text-align: center;
+    margin: 5px;
+}
+.second-page-image-container img{
+    width: 400px;
+}
+.second-page-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.second-page-button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.second-page-button-container button{
+    border: solid 1px ;
+    border-radius: 4px;
+    padding: 12px 18px 12px 18px;
+}
