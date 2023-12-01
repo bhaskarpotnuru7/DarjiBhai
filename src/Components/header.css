@@ -1,0 +1,31 @@
+.nav-bg{
+    background-color: #664444;
+}
+.bag-icon{
+    color: #ffffff;
+    margin-top: 12px;
+}
+.user-account {
+    background-color: #ffffff;
+    color : #000000;
+    font-size: 13px;
+    height: 27px;
+    width: 27px;
+    border-radius: 30px;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 0px;
+    text-align: center;
+}
+.bag-icon{
+    color: #ffffff;
+    font-size: 25px;
+    padding-top: 7px;
+}
+.logo-name{
+    font-family: cursive;
+    font-size: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}

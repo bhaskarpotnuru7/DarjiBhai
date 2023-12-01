@@ -1,0 +1,301 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.nav-bg{
+    background-color: #f7e0e8;
+    background-size: cover;
+}
+
+.user-profile {
+    color : #000000;
+    font-size: 13px;
+}
+.logo-name{
+    font-family: cursive;
+    color: #000000;
+    font-size: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.user-profile-icon{
+    color: #000000;
+    font-size: 25px;
+}
+.first-page-container{
+    background-color: #fcf3f6;
+
+}
+
+.main-container {
+    background-image: url("https://res.cloudinary.com/dosckylqx/image/upload/v1701263236/8326_pu9buv.jpg");
+    height: 70vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.home-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+
+}
+
+.brand-name {
+    font-family: cursive;
+    color: #ffffff;
+    font-size: 45px;
+    padding-bottom: 35px;
+    padding-left: 15px;
+}
+
+.container p {
+    display: flex;
+    color: #ffffff;
+}
+
+.container p:nth-child(1) {
+    color: #ffffff;
+    font-size: 29px;
+    font-weight: 800;
+    font-family: Sans-Serif;
+    line-height: 10px;
+    padding-left: 2px;
+
+}
+
+.container p:nth-child(2) {
+    color: #ffffff;
+    font-size: 53px;
+    font-family: Sans-Serif;
+    font-weight: 800;
+    line-height: 20px;
+
+}
+
+.container p:nth-child(3) {
+    color: #000000;
+    font-size: 20px;
+    font-family: Sans-Serif;
+    background-color: #ffffff;
+    width: 250px;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 10px 0;
+    line-height: 25px;
+}
+
+
+.container p:nth-child(4) {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Sans-Serif;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.container span {
+    font-size: 35px;
+    margin: 0 10px;
+    line-height: 30px;
+}
+
+.homepage-button-container button {
+    background-color: transparent;
+    padding: 4px;
+    color: #ffffff;
+    border: solid 2px #ffffff;
+    border-radius: 4px;
+    margin-top: 0px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.main-container img {
+    width: 450px;
+    text-align: right;
+}
+.description-container{
+    color: #000000;
+    text-align: center;
+}
+.description-container h1{
+    color: #000000;
+    padding-top: 40px;
+}
+.description-container h2{
+    font-family: Gill Sans;
+    line-height: 20px;
+}
+.description-container p{
+    font-family: Calibri;
+    padding: 10px 30px 50px 30px;
+    font-size: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.card-1 {
+    border: solid 2px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 6px;
+    border-width: 0px;
+    background-image: url("https://res.cloudinary.com/dosckylqx/image/upload/v1701263159/Snapinsta.app_322410400_1195537838021689_1321816959545827778_n_1080_wohgoa.jpg");
+    background-size: cover;
+    color: #ffffff;
+}
+
+.card-1 p {
+    text-align: center;
+    font-size: 25px;
+}
+
+.card-1 button {
+    background-color: transparent;
+    padding: 4px;
+    width: 200px;
+    color: white;
+    border: solid 1px;
+    border-radius: 4px;
+
+}
+
+.card-2 {
+    border: solid 2px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 6px;
+    border-width: 0px;
+    background-image: url("https://res.cloudinary.com/dosckylqx/image/upload/v1701263159/Snapinsta.app_322410400_1195537838021689_1321816959545827778_n_1080_wohgoa.jpg");
+    background-size: cover;
+    color: #ffffff;
+}
+
+.card-2 p {
+    text-align: center;
+    font-size: 25px;
+}
+
+.card-2 button {
+    background-color: transparent;
+    padding: 4px;
+    width: 200px;
+    color: white;
+    border: solid 1px;
+    border-radius: 4px;
+
+}
+.second-section-container{
+    text-align: center;
+    margin-top: 20px;
+}
+.second-section-container h1{
+    font-size: 25px;
+}
+.second-section-container p{
+    font-size: 18px;
+}
+
+
+.lehenga-collection {
+    background-image: url("https://res.cloudinary.com/dosckylqx/image/upload/v1701263159/Snapinsta.app_404653696_886696486176942_9165076474330269109_n_1080_s2yvuf.jpg");
+    background-size: cover;
+    width: 450px;
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    color: #ffffff;
+}
+
+.blouse-collection {
+    background-image: url("https://res.cloudinary.com/dosckylqx/image/upload/v1701263157/Snapinsta.app_369606506_1484906375696832_1296644159049811507_n_1080_noopdm.jpg");
+    background-size: cover;
+    width: 450px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    color: #ffffff;
+}
+
+.dress-material-collection {
+    background-image: url("https://res.cloudinary.com/dosckylqx/image/upload/v1701263158/Snapinsta.app_397019162_302776715948681_848891325221043204_n_1080_awnda5.jpg");
+    background-size: cover;
+    width: 450px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    color: #ffffff;
+}
+
+.collection-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0 30px 0;
+    font-weight: 700;
+}
+
+.saree-collection {
+    background-image: url("https://res.cloudinary.com/dosckylqx/image/upload/v1701263159/Snapinsta.app_404574403_832308725331945_2396740236595114642_n_1080_lhlpec.jpg");
+    background-size: cover;
+    width: 450px;
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    color: #ffffff;
+}
+
+.customization-container{
+    background-color: #fcf3f6;
+    background-size: cover;
+    text-align: center;
+    margin-top: 20px;
+}
+.customization-container h1{
+    font-size: 25px;
+    padding-top: 35px;
+}
+.customization-container p{
+    font-size: 18px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.bottom-section-image-container{
+    text-align: center;
+    margin: 5px;
+}
+.bottom-section-image-container img{
+    width: 400px;
+}
+.bottom-section-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
