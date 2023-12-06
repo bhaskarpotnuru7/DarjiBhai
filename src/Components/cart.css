@@ -1,0 +1,133 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.cart-bg-container {
+    background-color: #ffffff;
+    width: 60%;
+    height: 100vh;
+    
+    
+    
+
+}
+.cart-page-details-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    
+}
+
+.cart-card-container {
+    display: flex;
+    background-color: #BCB6B6;
+    padding: 10px;
+    margin: 10px;
+    width: 600px;
+    
+    
+}
+
+.cart-card-container img {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin: auto;
+    margin-left: 25px;
+    margin-right: 20px;
+    
+}
+
+.cart-card-container p {
+    font-size: 15px;
+    padding-top: 7px;
+}
+
+.cart-card-container span {
+    font-size: 10px;
+}
+
+.cart-mixed {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.cart-yellow {
+    margin-left: 75px;
+    margin-right: 50px;
+}
+.cart-cream {
+    margin-left: 75px;
+    margin-right: 50px;
+}
+
+.cart-items {
+    margin: 6px 5px 0 0;
+}
+
+.cart-page-button-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-page-button-container button {
+    height: 20px;
+    width: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 20px;
+    margin: 4px 20px 0 2px;
+}
+
+.cart-page-items {
+    display: flex;
+    margin: 0 15px;
+}
+
+.cart-price {
+    margin: auto;
+    margin-right: 50px;
+}
+
+.cart-container {
+    display: flex;
+}
+
+.cart-cross-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.cart-page-logo{
+    font-family: cursive;
+    font-size: 35px;
+    margin-top: 50px;
+    
+    margin-left: 150px;
+}
+.your-shopping-cart {
+    font-family: Roboto;
+    font-size: 18px;
+}
+.cart-page-back-to-shop{
+    display: flex;
+    margin-right: 280px;
+}
+.cart-page-back-to-shop p{
+    padding-left: 5px;
+}
+.cart-page-back-to-shop i{
+    padding-top: 5px;
+}
+.cart-page-total{
+    padding-left: 40px;
+}
+.cart-page-bottom-container{
+    display: flex;
+    margin-top: 30px;
+    margin-right: 60px;
+}

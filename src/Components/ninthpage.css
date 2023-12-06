@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.ninth-page-container{
+    display: flex;
+}
+
+.ninth-page-address-container{
+    background-color: #463C40;
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.ninth-page-address-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ninth-page-choose-address-options{
+    width: 280px;
+    height: 30px;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.ninth-page-shipping-address button{
+    width: 280px;
+    padding: 8px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 4px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: #9F5B79;
+    color: #9F5B79;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.ninth-page-bottom-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.ninth-page-bottom-container button{
+    height: 8px;
+    width: 8px;
+    border-radius: 20px;
+    margin: 5px;
+    border-style: solid;
+    border-color: #9F5B79;
+}
+.ninth-page-bottom-container button:nth-child(1){
+    background-color: transparent;
+}
+.ninth-page-bottom-container button:nth-child(2){
+    background-color: transparent;
+}
+.ninth-page-bottom-container button:nth-child(3){
+    background-color: #9F5B79;
+}
+
+.ninth-page-checkout-button-container button{
+    width: 100%;
+    background-color: #9F5B79;
+    padding: 15px 0;
+    border-width: 0px;
+    font-weight: 700;
+}
+
+.ninth-page-shipping-address{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+.ninth-page-shipping-address h1{
+    font-size: 15px;
+    color: #9F5B79;
+    font-weight: 700;
+    padding-top: 15px;
+}
+.ninth-page-shipping-address h1:nth-child(2){
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.ninth-page-shipping-address p{
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+.ninth-page-shipping-address span{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.ninth-page-order-completion h1{
+    color: #9F5B79;
+    font-size: 14px;
+    font-weight: 500;
+}

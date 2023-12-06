@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.eleventh-page-top-container{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.eleventh-page-top-container h1{
+    font-size: 22px;
+    font-weight: 600;
+}
+.eleventh-page-top-container p{
+    font-size: 14px;
+}
+.eleventh-page-horizontal-line{
+    width: 90%;
+    margin: auto;
+}
+.eleventh-page-middle-container p{
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+   
+}
+
+
+.icon-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+
+}
+.tick-icon{
+    color: green;
+    margin-bottom: 5px;
+}
+.icon-in-process{
+    color: orange;
+    font-size: 5px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.process-icon {
+    color: #E035D8;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.arrow-icon {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 20px 20px 20px;
+    
+}
+
+.icon-desc {
+    font-size: 12px;
+    font-weight: 700;
+}
+.custom-icon{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+}
+
+.eleventh-page-horizontal-line-2{
+    width: 30%;
+    margin: auto;
+    margin-top: 10px;
+}
+.eleventh-page-clock-icon{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.eleventh-page-footer-desc{
+    font-size: 13px;
+    text-align: center;
+}

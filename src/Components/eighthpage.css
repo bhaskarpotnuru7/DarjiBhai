@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.eighth-page-container{
+    display: flex;
+}
+
+.eighth-page-address-container{
+    background-color: #463C40;
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.eighth-page-address-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.eighth-page-choose-address-options{
+    width: 280px;
+    height: 30px;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.eighth-page-shipping-address button{
+    width: 280px;
+    padding: 8px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 4px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: #9F5B79;
+    color: #9F5B79;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.eighth-page-bottom-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.eighth-page-bottom-container button{
+    height: 8px;
+    width: 8px;
+    border-radius: 20px;
+    margin: 5px;
+    border-style: solid;
+    border-color: #9F5B79;
+}
+.eighth-page-bottom-container button:nth-child(1){
+    background-color: transparent;
+}
+.eighth-page-bottom-container button:nth-child(2){
+    background-color: #9F5B79;
+}
+.eighth-page-bottom-container button:nth-child(3){
+    background-color: transparent;
+}
+
+.eighth-page-checkout-button-container button{
+    width: 100%;
+    background-color: #9F5B79;
+    padding: 15px 0;
+    border-width: 0px;
+    font-weight: 700;
+}
+.eighth-page-checkout-arrow-icon{
+    padding-left: 10px;
+}
+
+.eighth-page-shipping-address{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+.eighth-page-shipping-address h1{
+    font-size: 15px;
+    color: #9F5B79;
+    font-weight: 700;
+    padding-top: 15px;
+}
+.eighth-page-shipping-address h1:nth-child(2){
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+}
+.eighth-page-shipping-address p{
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+.eighth-page-shipping-address span{
+    font-weight: 700;
+}
+.eighth-page-horizontal-line{
+    width: 48%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.eighth-page-total-price-details1{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.eighth-page-total-price-details2{
+    padding-left: 120px;
+    padding-right: 20px;
+}
+.eighth-page-total-price-details3{
+    padding-left: 96px;
+    padding-right: 20px;
+}
+.eighth-page-total-price-details4{
+    padding-left: 114px;
+    padding-right: 20px;
+}
+.eighth-page-total-price-details5{
+    padding-left: 76px;
+    padding-right: 20px;
+}
+.eighth-page-total-price-details6{
+    padding-left: 32px;
+    padding-right: 20px;
+}
+.eighth-page-total-price h1{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}

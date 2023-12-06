@@ -1,0 +1,32 @@
+*{
+    margin : 0px;
+    padding: 0px;
+}
+.icon-container{
+    display: flex;
+    justify-content: center;
+
+}
+.process-icon {
+    color: #E035D8;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.arrow-icon {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 20px 20px 20px;
+    
+}
+
+.icon-desc {
+    font-size: 12px;
+    font-weight: 700;
+}
+.custom-icon{
+    text-align: center;
+    margin: 10px;
+}

@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.fifth-page-top-container{
+    margin: 25px 0px;
+    text-align: center;
+    
+}
+.fifth-page-top-container h1{
+    font-size: 22px;
+}
+.fifth-page-top-container p{
+    font-size: 15px;
+
+}
+.fifth-page-image-container{
+    border: solid 1px #000000;
+    height: 640px;
+    width:453px;
+    background-color: #664444;
+    margin-right: 50px;
+}
+.fifth-page-image-container img{
+    height: 550px;
+    width:450px;
+}
+.fifth-page-img-desc-container{
+    color: #ffffff;
+    text-align: center;
+    margin: 10px 0;
+}
+.fifth-page-img-desc-container button{
+    color: #000000;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border-width: 0px;
+    font-size: 10px;
+    font-weight: 700;
+}
+.fifth-page-middle-container{
+    display: flex;
+    justify-content: center;
+}
+
+.fifth-page-designs-container h1{
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.fifth-page-designs-container img{
+    width: 150px;
+    margin: 5px;
+}
+
+.fifth-page-designs-container button{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-width: 0px;
+    border-radius: 2px;
+    margin: 4px;
+}
+.fifth-page-drag-drop-design{
+    border: 1px solid;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0 27px 5px;
+    
+}
+.fifth-page-drag-drop-design p{
+    font-size: 8px;
+    text-align: center;
+}
+
+.fifth-page-designs-container button:nth-child(1){
+    background-color: black;
+}
+
+.fifth-page-designs-container button:nth-child(2) {
+    background-color: #DC143C;
+}
+
+.fifth-page-designs-container button:nth-child(3) {
+    background-color: #20124d;
+}
+
+.fifth-page-designs-container button:nth-child(4) {
+    background-color: #741b47;
+}
+
+.fifth-page-designs-container button:nth-child(5) {
+    background-color: skyblue;
+}
+
+.fifth-page-designs-container button:nth-child(6) {
+    background-color: #93c47d;
+}
+
+.fifth-page-designs-container button:nth-child(7) {
+    background-color: yellow;
+}
+
+.fifth-page-designs-container button:nth-child(8) {
+    background-color: red;
+}
+.fifth-page-bottom-container{
+    margin-left: 245px;
+    margin-right: 240px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.fifth-page-bottom-container h1{
+    font-size: 18px;
+}
+.fifth-page-bottom-container span{
+    color: pink;
+}
+
+.fifth-page-customization{
+    font-size: 15px;
+    font-weight: 600;
+}
+.fifth-page-customization-desc{
+    font-size: 12px;
+}
+.fifth-page-horizontal-line{
+    width: 100%;
+    background-color: #000000;
+    height: 1px;
+    
+}
+.fifth-page-footer{
+    font-size: 15px;
+    padding-bottom: 20px;
+}

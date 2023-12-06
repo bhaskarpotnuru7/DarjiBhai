@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.tenth-page-top-container{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.tenth-page-top-container h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+.tenth-page-top-container p{
+    font-size: 15px;
+}
+.tenth-page-middle-container{
+    margin-bottom: 80px;
+}
+.tenth-page-horizontal-line{
+    width: 90%;
+    margin: auto;
+}
+.tenth-page-order-details-container{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+.tenth-page-order-details-container p:nth-child(1){
+    padding-right: 100px;
+}
+.tenth-page-order-details-container p:nth-child(2){
+    padding-right: 190px;
+}
+.tenth-page-order-details-container p:nth-child(3){
+    padding-right: 190px;
+}
+.tenth-page-order-details-container p:nth-child(4){
+    padding-right: 230px;
+}
+
+.tenth-page-order-details{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    padding-top: 10px;
+}
+.tenth-page-order-details p:nth-child(1){
+    padding-right: 120px;
+   padding-left: 0px;
+}
+.tenth-page-order-details p:nth-child(2){
+    padding-right: 215px;
+    padding-left: 10px;
+}
+.tenth-page-order-details p:nth-child(3){
+    padding-right: 160px;
+}
+.tenth-page-order-details p:nth-child(4){
+    padding-right: 230px;
+}

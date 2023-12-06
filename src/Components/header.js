@@ -18,7 +18,8 @@ class Header extends Component{
             <Nav.Link href="#customize" className = "m-3 ml-5 mr-5">CUSTOMIZE</Nav.Link>
             <Nav.Link href="#contactus" className = "m-3 mr-5">CONTACT US</Nav.Link>
             <Nav.Link href="#useraccount" className = "user-account m-auto mr-5 pr-5">U</Nav.Link>
-            <i className="fa-solid fa-bag-shopping bag-icon m-3 mr-0 pl-5"></i>
+            <i className="fa-solid fa-bag-shopping bag-icon"></i>
+            <button className = "notification-count-button">3</button>
           </Nav>
         </Container>
       </Navbar>

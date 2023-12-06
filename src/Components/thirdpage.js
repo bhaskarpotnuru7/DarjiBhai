@@ -4,6 +4,7 @@ import Header from './header.js'
 import Footer from './footer.js'
 import './thirdpage.css'
 
+
 const imgObj = {
     mainUrl : "https://res.cloudinary.com/dosckylqx/image/upload/v1701049150/Snapinsta.app_400828507_3649227632029127_8142566013686327426_n_1080_whil5i.jpg",
     url1 : "https://res.cloudinary.com/dosckylqx/image/upload/v1701083490/Snapinsta.app_400347021_1088885059221664_1253804699700835914_n_1080_b7f505.jpg",

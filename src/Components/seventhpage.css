@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.seventh-page-container{
+    display: flex;
+}
+
+.seventh-page-address-container{
+    background-color: #664444;
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.seventh-page-address{
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    margin-left: 50px;
+}
+
+.seventh-page-address h1{
+    font-size: 20px;
+    color: #9F5B79;
+    padding-bottom: 20px;
+}
+.seventh-page-address p{
+    font-size: 13px;
+    color: #ffffff;
+}
+.seventh-page-choose-address-options{
+    width: 280px;
+    height: 30px;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.seventh-page-address button{
+    width: 280px;
+    padding: 8px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: #9F5B79;
+    color: #9F5B79;
+    margin-top: 25px;
+}
+.seventh-page-bottom-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.seventh-page-bottom-container button{
+    height: 8px;
+    width: 8px;
+    border-radius: 20px;
+    margin: 5px;
+    border-style: solid;
+    border-color: #9F5B79;
+}
+.seventh-page-bottom-container button:nth-child(1){
+    background-color: #9F5B79;
+}
+.seventh-page-bottom-container button:nth-child(2){
+    background-color: transparent;
+}
+.seventh-page-bottom-container button:nth-child(3){
+    background-color: transparent;
+}
+
+.seventh-page-checkout-button-container button{
+    width: 100%;
+    background-color: #9F5B79;
+    padding: 15px 0;
+    border-width: 0px;
+    font-weight: 700;
+}
+.seventh-page-checkout-arrow-icon{
+    padding-left: 10px;
+}
+
+.seventh-page-shipping-address{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.seventh-page-shipping-address h1{
+    font-size: 15px;
+}
+.seventh-page-shipping-address h1:nth-child(2){
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+}
+.seventh-page-shipping-address p{
+    padding-bottom: 10px;
+}
+.seventh-page-shipping-address span{
+    font-weight: 700;
+}
+.seventh-page-shopping-charge-details{
+    color: #ffffff;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-left: 5px;
+}
+.seventh-page-shopping-charge-pincode{
+    color: #9F5B79;
+    font-size: 14px;
+    font-weight: 700;
+}
+.seventh-page-shopping-charge-cost{
+    font-weight: 700;
+}

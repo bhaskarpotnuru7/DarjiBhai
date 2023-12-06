@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import ThirdPage from './Components/thirdpage.js';
+import FifthPage from './Components/fifthpage.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ThirdPage />
+    <FifthPage />
   </React.StrictMode>
 );
 
