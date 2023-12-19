@@ -1,13 +1,11 @@
+import React from 'react'
 import {Component} from 'react'
-import Header from './header.js'
-import Footer from './footer.js'
 import './eleventhpage.css'
 
 class EleventhPage extends Component{
     render(){
         return(
             <>
-                <Header />
                 <div className = "eleventh-page-top-container">
                     <h1>MY ACCOUNT / ORDERS / DB8092-23</h1>
                     <p>Full information with order processing tracking update</p>
@@ -58,8 +56,6 @@ class EleventhPage extends Component{
                     <hr className = "eleventh-page-horizontal-line-2"/>
                     <i class="fa-regular fa-clock eleventh-page-clock-icon"></i>
                     <p className = "eleventh-page-footer-desc">Time is ticking. We are left with 20 Hours more...</p>
-
-                    <Footer />
 
                 </div>
             </>

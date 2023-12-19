@@ -1,6 +1,5 @@
+import React from 'react'
 import {Component} from 'react'
-import Header from './header.js'
-import Footer from './footer.js'
 import './fourthpage.css'
 
 const imgObj = {
@@ -120,7 +119,6 @@ class FourthPage extends Component{
         const {FourthpageImgUrl} = this.state
         return(
             <>
-            <Header />
         
             <div className = "fourth-page-top-container">
                 <h1>SHOP / PEACOCK EMBROIDERY</h1>
@@ -192,8 +190,6 @@ class FourthPage extends Component{
                 <img src = {imgObj.url7} onClick = {this.onImage7} alt = "Embroidery Designs"/>
                 <img src = {imgObj.url8} onClick = {this.onImage8} alt = "Embroidery Designs"/>
             </div>
-
-        <Footer />
 
     </>
         

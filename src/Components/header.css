@@ -1,5 +1,6 @@
 .nav-bg{
     background-color: #664444;
+    position: sticky;
 }
 .bag-icon{
     color: #ffffff;
@@ -7,6 +8,7 @@
     margin-left: 20px;
 
 }
+
 .user-account {
     background-color: #ffffff;
     color : #000000;
@@ -20,25 +22,17 @@
     padding-right: 0px;
     text-align: center;
 }
-.bag-icon{
-    color: #ffffff;
-    font-size: 25px;
-    padding-top: 7px;
-}
+
 .logo-name{
     font-family: cursive;
     font-size: 30px;
     padding-left: 40px;
     padding-right: 40px;
+    color: #ffffff;
 }
-.notification-count-button{
-    background-color: #ffffff;
-    border-width: 0px;
-    color: #000000;
-    height: 15px;
-    width: 14px;
-    font-size: 8px;
-    border-radius: 15px;
-    padding: 0px 1px 0px 1px;
-    margin-top: 15px;
+
+
+.cart-link-icon{
+    width: 20px;
+    margin-left: 30px;
 }

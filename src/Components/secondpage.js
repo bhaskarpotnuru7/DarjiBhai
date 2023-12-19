@@ -1,9 +1,9 @@
+import React from 'react'
 import {Component} from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Footer from './footer.js';
 import './secondpage.css'
 
 class SecondPage extends Component{
@@ -118,7 +118,6 @@ class SecondPage extends Component{
             <div className = "second-page-button-container">
                 <button>LOAD MORE</button>
             </div>
-            <Footer />
             </>
         )
     }

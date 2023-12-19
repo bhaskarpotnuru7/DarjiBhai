@@ -1,7 +1,6 @@
+import React from 'react'
 import {Component} from 'react'
-import Header from './header.js'
 import Icons from './icons.js'
-import Footer from './footer.js'
 import './fifthpage.css'
 
 const imgObj = {
@@ -104,7 +103,6 @@ class FifthPage extends Component{
 
         return(
             <>
-                <Header />
 
                 <div className = "fifth-page-top-container">
                 <h1>CUSTOMIZE</h1>
@@ -167,7 +165,6 @@ class FifthPage extends Component{
 
             <Icons />
              <p className = "fifth-page-footer text-center">Our professionals will close all the above process in 45 Hours</p>
-            <Footer />
 
             </>
         )

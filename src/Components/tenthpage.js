@@ -1,13 +1,11 @@
+import React from 'react'
 import {Component} from 'react'
-import Header from './header.js'
-import Footer from './footer.js'
 import './tenthpage.css'
 
 class TenthPage extends Component{
     render(){
         return(
             <>
-                <Header />
                 <div className = "tenth-page-top-container">
                     <h1>MY ACCOUNT / ORDERS</h1>
                     <p>You will have all the info regarding an order. Just click and have a glance...</p>
@@ -48,7 +46,6 @@ class TenthPage extends Component{
                     </div>
                     <hr className = "tenth-page-horizontal-line"/>
                 </div>
-                <Footer />
             </>
         )
     }

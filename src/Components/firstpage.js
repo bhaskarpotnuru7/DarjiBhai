@@ -1,9 +1,6 @@
+import React from 'react'
 import {Component} from 'react'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Footer from './footer.js';
 import './firstpage.css'
 
 class FirstPage extends Component{
@@ -12,23 +9,9 @@ class FirstPage extends Component{
             <>
         <div>
             <div className = "first-page-container">
-    <Navbar className="nav-bg" data-bs-theme="dark">
-        <Container>
-          <Nav className="me-auto m-auto">
-            <Nav.Link href="#about" className = "text-dark m-3 mr-5">ABOUT</Nav.Link>
-            <Nav.Link href="#shop" className = "text-dark m-3 mr-5">SHOP</Nav.Link>
-            <Navbar.Brand className = "logo-name m-auto">DarjiBhai</Navbar.Brand>
-            <Nav.Link href="#customize" className = "text-dark m-3 ml-5 mr-5">CUSTOMIZE</Nav.Link>
-            <Nav.Link href="#contactus" className = "text-dark m-3 mr-5">CONTACT US</Nav.Link>
-            <Nav.Link href="#userprofile" className = "user-profile-icon m-auto">
-            <i class="fa-regular fa-user"></i>
-            </Nav.Link>
-          </Nav>
-        </Container>
-        </Navbar>
         <div className="main-container">
         <div className="home-page-container">
-            <h1 className="brand-name">DarjiBhai</h1>
+            <h1 className="first-page-brand-name">DarjiBhai</h1>
             <div className="container">
                 <p>PERSONALISED</p>
                 <p>CUSTOM</p>
@@ -44,7 +27,7 @@ class FirstPage extends Component{
         <img src="https://res.cloudinary.com/dosckylqx/image/upload/v1701273140/Bazaart_20231129_091934_704_dxibik.png" alt = "mage"/>
     </div>
     <div className = "description-container">
-        <h1 className = "brand-name">DarjiBhai</h1>
+        <h1 className = "first-page-brand-name">DarjiBhai</h1>
         <h2>Personalised Custom Embriodery & Sewing</h2>
         <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it 
            over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure
@@ -113,7 +96,6 @@ class FirstPage extends Component{
                 </div>
 
             </div>
-                <Footer />
         </div>
             </>
         )

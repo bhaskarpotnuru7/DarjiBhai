@@ -106,3 +106,50 @@
     font-size: 14px;
     font-weight: 500;
 }
+
+.ninth-page-payment-container {
+    border: 1px solid #ffffff;
+    width: 350px;
+    height: 210px;
+    border-radius: 8px;
+}
+
+.ninth-page-card {
+    display: flex;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+.ninth-page-horizontal-line {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.ninth-page-card-dots {
+    border: 1px solid;
+    width: 7px;
+    border-width: 0px;
+    border-radius: 2px;
+    margin-top: 8px;
+    margin-right: 3px;
+    background-color: grey;
+}
+
+.card-icon {
+    font-size: 30px;
+    color: grey;
+    margin: 5px;
+}
+
+.ninth-page-payment-options {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 35px;
+    margin-right: 40px;
+}
+
+.ninth-page-payment-option-desc {
+    font-size: 13px;
+    padding-top: 30px;
+    padding-left: 15px;
+}

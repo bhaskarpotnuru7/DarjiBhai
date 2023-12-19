@@ -1,7 +1,7 @@
+import React from 'react'
 import {Component} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Header from './header.js'
-import Footer from './footer.js'
+
 import './thirdpage.css'
 
 
@@ -120,7 +120,7 @@ class ThirdPage extends Component{
         const {imgUrl} = this.state
         return(
             <>
-                <Header />
+                
                 <div className = "third-page-top-container">
                     <h1>SHOP / PEACOCK EMBROIDERY</h1>
                     <p>Nice one liner to brief the below Embroidery Design</p>
@@ -191,7 +191,6 @@ class ThirdPage extends Component{
 
                     </div>
                 </div>
-                <Footer />
             </>
         )
     }
