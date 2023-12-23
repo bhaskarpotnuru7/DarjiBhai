@@ -1,6 +1,6 @@
 import React from 'react'
 import { Component } from 'react'
-import CartItem from './cartitem'
+import IncAndDec from './incanddec'
 import './mycart.css'
 
 const cartList = [
@@ -35,7 +35,19 @@ class MyCart extends Component{
       <div className = "my-cart-container">
       <h1>My Cart</h1>
       {cartList.map(eachItem =>(
-          <CartItem key = {eachItem.id} cartItemDetails = {eachItem} />
+
+         <div className = "cart-item-container">
+          <div className = "cart-item-details-container">
+              <img src = {eachItem.imageUrl} className = "cart-item-img" alt = {eachItem.name}/>
+              <p>{eachItem.name}</p>
+          </div>
+      
+          <IncAndDec />
+          
+          <p className = "cart-item-price-container">Rs.{eachItem.price}</p>
+          <button className = "cart-item-remove-button">X</button>
+          </div>
+          
       ))}
   </div>
     )

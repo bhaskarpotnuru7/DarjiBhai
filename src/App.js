@@ -1,6 +1,6 @@
 import React from "react"
 import {Component} from 'react'
-import {BrowserRouter,Switch,Route} from 'react-router-dom'
+import {BrowserRouter,Switch,Route,} from 'react-router-dom'
 
 import FirstPage from "./Components/firstpage"
 import ThirdPage from './Components/thirdpage'
@@ -9,21 +9,26 @@ import Products from './Components/products'
 import Header from './Components/header'
 import Footer from './Components/footer'
 import MyCart from "./Components/mycart"
+import ProductCardView from "./Components/productcardview"
+
 
 
 class App extends Component{
+
    render(){
+
    return ( 
       
          <BrowserRouter>
+
                  <Header /> 
                <Switch>
                
                   <Route exact path = "/" component = {FirstPage}/>
-                  
                   <Route exact path = "/products" component = {Products}/>
                   <Route exact path = "/shop" component = {ThirdPage}/>
                   <Route exact path = "/customize" component = {FifthPage}/>
+                  <Route exact path = "/products/:id" component = {ProductCardView}/>
                   <Route exact path = "/cart" component = {MyCart} />
                </Switch>
                <Footer /> 

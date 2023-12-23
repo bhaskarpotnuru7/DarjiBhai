@@ -12,7 +12,6 @@
     border: 0px solid;
     border-radius: 50%;
     text-align: center;
-    margin: auto;
 }
 .cart-inc-button{
     height: 25px;
@@ -20,7 +19,6 @@
     border: 0px solid;
     border-radius: 50%;
     text-align: center;
-    margin: auto;
     padding-top: 2px;
 }
 .cart-item-quantity{

@@ -1,8 +1,7 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './products.css'
-import ProductCard from './productcard';
 
 const productsList = [
   {
@@ -140,8 +139,17 @@ const Products = () =>{
                   </div>
                   <ul className = "products-list-container">
                       {productsList.map((eachItem)=>(
-                          <ProductCard key = {eachItem.id} productsList = {eachItem}/>
-                      ))}
+
+                         <Link to = {`/products/${eachItem.id}`} key = {eachItem.id} className = "link-item">
+                          <li className="product-card-container">
+                          <img src={eachItem.imageUrl} alt={eachItem.name} />
+                          <h2>{eachItem.name}</h2>
+                          <p className="product-card-price">Rs.{eachItem.price}/-</p>
+                          <p className="product-card-desc">{eachItem.description.substring(0, 100)}...</p>
+                          <button className='bg-info' >Add to Cart</button>
+                      </li>
+                      </Link>
+                ))}
                   </ul>
               </div>
           </>
