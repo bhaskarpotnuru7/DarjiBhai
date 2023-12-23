@@ -1,7 +1,8 @@
-import React from 'react'
+import React,{ useState } from 'react'
 import { useParams } from 'react-router-dom'
+import CartContext from '../Context/cartContext'
+
 import './productcardview.css'
-import IncAndDec from './incanddec'
 
 
 const productsList = [
@@ -131,30 +132,51 @@ const productsList = [
 
 const ProductCardView = () =>{
 
-      const {id} = useParams()
-      console.log(id)
-      const product = productsList.find((each) => each.id == id)
-      console.log(product)
-      const {imageUrl,name,price,description} = {...product}
+const [quantity,setQuantity] = useState(1)
 
-      return(
-        <div className="product-details-container">
-            <img src={imageUrl} alt="product" className="product-image" />
-          <div className="product">
-            <h1 className="product-name">{name}</h1>
-            <p className="product-price">Rs.{price}/-</p>
-            <p className="product-description">{description}</p>
-  
-            <div>
-            <IncAndDec />
-            </div>
-            <button type="button" className="button add-to-cart-btn">
-              ADD TO CART
-            </button>
-          </div>
-        </div>
+const onDecBtn = () =>{
+    if(quantity > 1){
+        setQuantity(quantity-1)
+    }
+}
+
+const {id} = useParams()
+const product = productsList.find((each) => (each.id) === parseInt(id))
+const {imageUrl,name,price,description} = product
+
+  return(<CartContext.Consumer>
+      {value =>{
+          const {addCartItem} = value
+          
+
+          const onAddToCart = () =>{
+              addCartItem({...product, quantity})
+          }
+          return(
+            <div className="product-details-container">
+                <img src={imageUrl} alt="product" className="product-image" />
+              <div className="product">
+                <h1 className="product-name">{name}</h1>
+                <p className="product-price">Rs.{price}/-</p>
+                <p className="product-description">{description}</p>
+      
+                <div className = "cart-inc-dec-container">
+                    <button className = "cart-dec-button" onClick = {onDecBtn}>-</button>
+                    <p className = "cart-item-quantity">{quantity}</p>
+                    <button className = "cart-inc-button" onClick = {() =>setQuantity(quantity+1)}>+</button>
+                </div>
     
-        )
+                <button type="button" className="button add-to-cart-btn" onClick = {onAddToCart}>
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+        
+            )
+
+      }}
+  </CartContext.Consumer>)
+
 }
 
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import {Component} from 'react'
+import { Link } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './firstpage.css'
 
@@ -20,8 +21,12 @@ class FirstPage extends Component{
                 </p>
             </div>
             <div className="homepage-button-container">
-                <button>SHOP NOW <i class="fa-solid fa-caret-right"></i></button>
-                <button>CUSTOMIZE <i class="fa-solid fa-caret-right"></i></button>
+                <Link to = "/shopnow">
+                <button>SHOP NOW <i className="fa-solid fa-caret-right"></i></button>
+                </Link>
+                <Link to = "/customize">
+                <button>CUSTOMIZE <i className="fa-solid fa-caret-right"></i></button>
+                </Link>
             </div>
         </div>
         <img src="https://res.cloudinary.com/dosckylqx/image/upload/v1701273140/Bazaart_20231129_091934_704_dxibik.png" alt = "mage"/>
@@ -37,12 +42,12 @@ class FirstPage extends Component{
     <div className="card-container">
         <div className="card-1">
             <p>Classy & Fabulous<br />collection</p>
-            <button>SHOP NOW <i class="fa-solid fa-caret-right"></i></button>
+            <button>SHOP NOW <i className="fa-solid fa-caret-right"></i></button>
         </div>
 
         <div className="card-2">
             <p>Top Class Custom <br /> Embriodery Services</p>
-            <button>CUSTOMIZE <i class="fa-solid fa-caret-right"></i></button>
+            <button>CUSTOMIZE <i className="fa-solid fa-caret-right"></i></button>
         </div>
     </div>
         

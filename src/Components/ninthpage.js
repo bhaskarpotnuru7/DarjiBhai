@@ -19,19 +19,19 @@ class NinthPage extends Component{
                         <h1>Payment:</h1>
                         <p><span>26, 709.00 INR</span><br />All transactions are secure and encrypted</p>
 
-                        <div class="ninth-page-payment-container">
-                            <div class="ninth-page-card">
-                                <p class="ninth-page-card-dots"></p>
-                                <p class="ninth-page-card-dots"></p>
-                                <p class="ninth-page-card-dots"></p>
+                        <div className="ninth-page-payment-container">
+                            <div className="ninth-page-card">
+                                <p className="ninth-page-card-dots"></p>
+                                <p className="ninth-page-card-dots"></p>
+                                <p className="ninth-page-card-dots"></p>
                             </div>
-                            <hr class="ninth-page-horizontal-line" />
-                            <div class="ninth-page-payment-options">
-                                <i class="fa-brands fa-cc-visa card-icon"></i>
-                                <i class="fa-brands fa-cc-mastercard card-icon"></i>
-                                <i class="fa-brands fa-cc-paypal card-icon"></i>
+                            <hr className="ninth-page-horizontal-line" />
+                            <div className="ninth-page-payment-options">
+                                <i className="fa-brands fa-cc-visa card-icon"></i>
+                                <i className="fa-brands fa-cc-mastercard card-icon"></i>
+                                <i className="fa-brands fa-cc-paypal card-icon"></i>
                             </div>
-                            <p class="ninth-page-payment-option-desc">After clicking "Complete order", you will be redirected <br />
+                            <p className="ninth-page-payment-option-desc">After clicking "Complete order", you will be redirected <br />
                                 to Razorpay(Cards,UPI,NetBanking,Wallets,Paypal) to <br />
                                 complete your purchase securely.
                             </p>
