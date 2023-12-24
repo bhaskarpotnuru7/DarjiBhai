@@ -1,38 +1,33 @@
-.nav-bg{
+.nav-header{
     background-color: #664444;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
     position: sticky;
 }
-.bag-icon{
+.nav-items-container{
+    display: flex;
+    list-style-type: none;
+    margin: auto 0;
+    margin-right: 40px;
+}
+.nav-item{
+    text-decoration: none;
+    padding: 0 10px;
     color: #ffffff;
-    margin-top: 13px;
+}
+.nav-logo{
+    font-size: 25px;
     margin-left: 20px;
-
-}
-
-.user-account {
-    background-color: #ffffff;
-    color : #000000;
-    font-size: 13px;
-    height: 27px;
-    width: 27px;
-    border-radius: 30px;
-    padding-top: 4px;
-    padding-bottom: 5px;
-    padding-left: 8px;
-    padding-right: 0px;
-    text-align: center;
-}
-
-.logo-name{
-    font-family: cursive;
-    font-size: 30px;
-    padding-left: 40px;
-    padding-right: 40px;
     color: #ffffff;
 }
-
-
-.cart-link-icon{
-    width: 20px;
-    margin-left: 30px;
+.nav-profile-item{
+    background-color: #ffffff;
+    font-size: 13px;
+    padding: 6px 10px;
+    border-radius: 50%;
+    color: #000000;
+    text-align: center;
+    margin-left: 50px;
 }

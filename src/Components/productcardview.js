@@ -148,7 +148,6 @@ const {imageUrl,name,price,description} = product
       {value =>{
           const {addCartItem} = value
           
-
           const onAddToCart = () =>{
               addCartItem({...product, quantity})
           }

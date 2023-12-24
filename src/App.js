@@ -4,13 +4,13 @@ import {BrowserRouter,Switch,Route,} from 'react-router-dom'
 import CartContext from "./Context/cartContext"
 
 import FirstPage from "./Components/firstpage"
-import ThirdPage from './Components/thirdpage'
 import FifthPage from './Components/fifthpage'
 import Products from './Components/products'
 import Header from './Components/header'
 import Footer from './Components/footer'
 import MyCart from "./Components/mycart"
 import ProductCardView from "./Components/productcardview"
+import LoginForm from "./Components/loginform"
 
 
 
@@ -33,12 +33,13 @@ class App extends Component{
                addCartItem : this.addCartItem, 
                deleteCartItem: this.deleteCartItem
                }}>
+                  <Route exact path = "/login" component = {LoginForm} />
             <Header />  
                <Switch>
+                  
                   <Route exact path = "/" component = {FirstPage}/>
                   <Route exact path = "/shopnow" component = {Products} />
                   <Route exact path = "/products" component = {Products}/>
-                  <Route exact path = "/shop" component = {ThirdPage}/>
                   <Route exact path = "/customize" component = {FifthPage}/>
                   <Route exact path = "/products/:id" component = {ProductCardView}/>
                   <Route exact path = "/cart" component = {MyCart} />
