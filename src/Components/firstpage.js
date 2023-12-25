@@ -3,11 +3,14 @@ import {Component} from 'react'
 import { Link } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './firstpage.css'
+import Header from './header'
+import Footer from './footer'
 
 class FirstPage extends Component{
     render(){
         return(
             <>
+            <Header />
         <div>
             <div className = "first-page-container">
         <div className="main-container">
@@ -102,6 +105,7 @@ class FirstPage extends Component{
 
             </div>
         </div>
+            <Footer />
             </>
         )
     }

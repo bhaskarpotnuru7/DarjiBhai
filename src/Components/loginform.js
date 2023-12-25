@@ -1,4 +1,5 @@
 import React,{Component} from 'react'
+import { Link } from 'react-router-dom'
 
 import './loginform.css'
 
@@ -97,6 +98,7 @@ class LoginForm extends Component {
           <button type="submit" className="login-button">
             Login
           </button>
+          <p className = "dont-have-account">Don't have an account?  <Link to = "/register" className = "register-now-link">Register now</Link></p> 
         </form>
       </div>
     )

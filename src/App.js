@@ -6,11 +6,10 @@ import CartContext from "./Context/cartContext"
 import FirstPage from "./Components/firstpage"
 import FifthPage from './Components/fifthpage'
 import Products from './Components/products'
-import Header from './Components/header'
-import Footer from './Components/footer'
 import MyCart from "./Components/mycart"
 import ProductCardView from "./Components/productcardview"
 import LoginForm from "./Components/loginform"
+import RegisterForm from "./Components/registerform"
 
 
 
@@ -33,10 +32,11 @@ class App extends Component{
                addCartItem : this.addCartItem, 
                deleteCartItem: this.deleteCartItem
                }}>
-                  <Route exact path = "/login" component = {LoginForm} />
-            <Header />  
-               <Switch>
                   
+               <Switch>
+                  <Route exact path = "/login" component = {LoginForm} />
+                  <Route exact path = "/login" component = {LoginForm}/>
+                  <Route exact path = "/register" component = {RegisterForm}/>  
                   <Route exact path = "/" component = {FirstPage}/>
                   <Route exact path = "/shopnow" component = {Products} />
                   <Route exact path = "/products" component = {Products}/>
@@ -44,7 +44,6 @@ class App extends Component{
                   <Route exact path = "/products/:id" component = {ProductCardView}/>
                   <Route exact path = "/cart" component = {MyCart} />
                </Switch>
-                  <Footer /> 
             </CartContext.Provider>
          </BrowserRouter>
       )

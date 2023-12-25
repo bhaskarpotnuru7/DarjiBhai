@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './products.css'
+import Header from './header';
+import Footer from './footer';
 
 const productsList = [
   {
@@ -129,6 +131,8 @@ const productsList = [
 const Products = () =>{
         return(
           <>
+            <Header />
+
               <div className = "products-bg-container">
                 <div className = "products-page-top-container">
                     <h1>DB</h1>
@@ -152,6 +156,8 @@ const Products = () =>{
                 ))}
                   </ul>
               </div>
+            
+            <Footer />
           </>
       )
 

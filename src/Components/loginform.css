@@ -67,6 +67,7 @@
       flex-shrink: 0;
       box-shadow: 0px 8px 40px rgba(7, 7, 7, 0.08);
       padding: 64px 48px 64px 48px;
+      margin: auto;
     }
   }
   
@@ -135,4 +136,11 @@
     line-height: 16px;
     color: #ff0b37;
   }
-  
+  .dont-have-account{
+    font-size: 13px;
+    padding-top: 10px;
+  }
+  .register-now-link{
+    text-decoration: none;
+    font-weight: 700;
+  }

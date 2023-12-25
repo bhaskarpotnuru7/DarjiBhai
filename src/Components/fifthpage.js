@@ -1,5 +1,7 @@
 import React from 'react'
 import {Component} from 'react'
+import Header from './header.js'
+import Footer from './footer.js'
 import Icons from './icons.js'
 import './fifthpage.css'
 
@@ -103,7 +105,8 @@ class FifthPage extends Component{
 
         return(
             <>
-
+            <Header />
+            <div>
                 <div className = "fifth-page-top-container">
                 <h1>CUSTOMIZE</h1>
                 <p>Let us style your fabric the way you wanted to see...</p>
@@ -166,6 +169,8 @@ class FifthPage extends Component{
             <Icons />
              <p className = "fifth-page-footer text-center">Our professionals will close all the above process in 45 Hours</p>
 
+            </div>
+            <Footer />
             </>
         )
     }
