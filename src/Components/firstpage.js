@@ -1,13 +1,18 @@
 import React from 'react'
 import {Component} from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './firstpage.css'
 import Header from './header'
 import Footer from './footer'
+import Cookies from 'js-cookie'
 
 class FirstPage extends Component{
     render(){
+        const jwt = Cookies.get("jwt_token")
+        if(jwt === undefined){
+            return <Redirect to = "/login" />
+        }
         return(
             <>
             <Header />

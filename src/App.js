@@ -14,9 +14,9 @@ import RegisterForm from "./Components/registerform"
 
 
 class App extends Component{
-      state = {cartList : [],}
+      state = {cartList : []}
 
-      addCartItem = product =>{
+      addCartItem = (product)=>{
          this.setState(prevState => ({cartList: [...prevState.cartList, product]}))
       }
       
@@ -28,7 +28,7 @@ class App extends Component{
          <BrowserRouter>
             <CartContext.Provider
             value = {{
-               cartList, 
+               cartList,
                addCartItem : this.addCartItem, 
                deleteCartItem: this.deleteCartItem
                }}>

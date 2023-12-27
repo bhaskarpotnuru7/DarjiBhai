@@ -1,8 +1,16 @@
 import React, {Component} from 'react'
-import { Link } from 'react-router-dom'
+import { Link , withRouter} from 'react-router-dom'
 import './header.css'
+import Cookies from 'js-cookie'
 
 class Header extends Component{
+
+    onClickLogOut = () =>{
+        const {history} = this.props
+        Cookies.remove("jwt_token")
+        history.replace("/login")
+    }
+
     render(){
         return(
             <nav className = "nav-header fixed-top">
@@ -23,10 +31,12 @@ class Header extends Component{
                     <li>
                         <Link to="/userprofile" className = "nav-item nav-profile-item">U</Link>
                     </li>
+                    <button className = "logout-button bg-primary" onClick = {this.onClickLogOut}>Log out</button>
                 </ul>
+                
             </nav>
         )
     }
 }
 
-export default Header
+export default withRouter (Header)

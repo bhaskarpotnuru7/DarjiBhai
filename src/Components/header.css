@@ -10,7 +10,7 @@
     display: flex;
     list-style-type: none;
     margin: auto 0;
-    margin-right: 40px;
+    margin-right: 10px;
 }
 .nav-item{
     text-decoration: none;
@@ -30,4 +30,14 @@
     color: #000000;
     text-align: center;
     margin-left: 50px;
+}
+.logout-button{
+    font-size: 10px;
+    color: #ffffff;
+    padding: 4px 10px;
+    border : 0px solid;
+    border-radius: 2px;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-right: 20px;
 }

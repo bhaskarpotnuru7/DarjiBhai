@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
-import { Link } from 'react-router-dom'
-
+import { Link, Redirect } from 'react-router-dom'
+import Cookies from 'js-cookie'
 import './loginform.css'
 
 const userData = JSON.parse(localStorage.getItem("data"))
@@ -60,7 +60,8 @@ class LoginForm extends Component {
     )
   }
 
-  onSubmitSuccess = () =>{
+  onSubmitSuccess = (jwt_token) =>{
+    Cookies.set("jwt_token",jwt_token,{expires : 30})
     const {history} = this.props
     history.replace("/")
   }
@@ -72,8 +73,9 @@ class LoginForm extends Component {
 
   onSubmitForm = async event =>{
     event.preventDefault()
-    if(userData.find(each=>(each.jwtToken === "a1234567"))){
-        this.onSubmitSuccess()
+    const jwt_token = "a1234567"
+    if(userData.find(each=>(each.jwtToken === jwt_token))){
+        this.onSubmitSuccess(jwt_token)
     }else{
         this.onSubmitFailure()
     }
@@ -81,6 +83,12 @@ class LoginForm extends Component {
 
   render() {
     const {showSubmitError,errorMsg} = this.state
+
+    const jwt = Cookies.get("jwt_token")
+        if(jwt !== undefined){
+            return <Redirect to = "/" />
+        }
+        
     return (
       <div className="login-form-container">
         <h1 className="login-website-logo-mobile-image">DARJIBHAI</h1>
