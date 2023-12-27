@@ -3,10 +3,15 @@ import { Link } from 'react-router-dom'
 
 import './loginform.css'
 
+const userData = JSON.parse(localStorage.getItem("data"))
+
+
 class LoginForm extends Component {
   state = {
     username: '',
     password: '',
+    showSubmitError : false,
+    errorMsg : ""
   }
 
   onChangeUsername = event => {
@@ -30,6 +35,7 @@ class LoginForm extends Component {
           className="password-input-filed"
           value={password}
           onChange={this.onChangePassword}
+          placeholder = "Password"
         />
       </>
     )
@@ -48,6 +54,7 @@ class LoginForm extends Component {
           className="username-input-filed"
           value={username}
           onChange={this.onChangeUsername}
+          placeholder = "Username"
         />
       </>
     )
@@ -58,30 +65,22 @@ class LoginForm extends Component {
     history.replace("/")
   }
 
-  onSubmitFailure = errorMsg =>{
-        console.log(errorMsg)
+  onSubmitFailure = () =>{
+    const errorMsg = "Username and Password didn,t match"
+    this.setState({showSubmitError:true, errorMsg})
   }
 
   onSubmitForm = async event =>{
-      event.preventDefault()
-      const {username,password} = this.state
-      const userDetails = {username,password}
-      const url = "https://apis.ccbp.in/login"
-      const options = {
-            method : "POST",
-            body : JSON.stringify(userDetails),
-      }
-      const response = await fetch(url, options)
-      const data = await response.json()
-      console.log(data)
-      if(response.ok === true){
-            this.onSubmitSuccess()
-      }else{
-         this.onSubmitFailure(data.error_msg)
-      }
+    event.preventDefault()
+    if(userData.find(each=>(each.jwtToken === "a1234567"))){
+        this.onSubmitSuccess()
+    }else{
+        this.onSubmitFailure()
+    }
   }
 
   render() {
+    const {showSubmitError,errorMsg} = this.state
     return (
       <div className="login-form-container">
         <h1 className="login-website-logo-mobile-image">DARJIBHAI</h1>
@@ -98,7 +97,8 @@ class LoginForm extends Component {
           <button type="submit" className="login-button">
             Login
           </button>
-          <p className = "dont-have-account">Don't have an account?  <Link to = "/register" className = "register-now-link">Register now</Link></p> 
+          {showSubmitError && <p className = "error-msg">*{errorMsg}</p>}
+          <p className = "dont-have-account">Don't have an account?  <Link to = "/register" className = "register-now-link">Create Account</Link></p> 
         </form>
       </div>
     )

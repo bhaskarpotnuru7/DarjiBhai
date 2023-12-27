@@ -5,7 +5,7 @@
 .input-container {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin:0px 0 ;
     width: 100%;
   }
 .input-label {
@@ -16,7 +16,7 @@
     line-height: 16px;
     color: #475569;
   }
-  .firstname-input-filed {
+  .input-filed {
     font-size: 14px;
     height: 15px;
     width: 270px;
@@ -24,7 +24,6 @@
     background-color: #e2e8f0;
     color: #64748b;
     border-radius: 2px;
-    margin-top: 5px;
     padding: 15px 0;
   }
   .form-container {
@@ -51,7 +50,7 @@
     color: #ffffff;
     height: 38px;
     width: 270px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 2px;
     background-color: #0b69ff;
     border-radius: 8px;
@@ -60,7 +59,7 @@
 .register-form-container{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .form-heading{
     padding-bottom: 20px;
@@ -73,4 +72,8 @@
 .login-now-link{
     text-decoration: none;
     font-weight: 700;
+}
+.validation-details{
+  font-size: 13px;
+  color: red;
 }
