@@ -20,7 +20,16 @@ class App extends Component{
          this.setState(prevState => ({cartList: [...prevState.cartList, product]}))
       }
       
-      deleteCartItem = () =>{}
+      deleteCartItem = (id) =>{
+         const {cartList} = this.state
+         const exceptDeleteItemList = cartList.filter(eachItem => eachItem.id !== id)
+         this.setState({cartList:exceptDeleteItemList})
+      }
+
+      removeAllCartItems = () =>{
+         this.setState({cartList : []})
+      }
+
       
    render(){
       const {cartList} = this.state
@@ -30,7 +39,8 @@ class App extends Component{
             value = {{
                cartList,
                addCartItem : this.addCartItem, 
-               deleteCartItem: this.deleteCartItem
+               deleteCartItem: this.deleteCartItem,
+               removeAllCartItems: this.removeAllCartItems,
                }}>
                   
                <Switch>

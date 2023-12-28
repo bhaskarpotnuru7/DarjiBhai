@@ -1,10 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './products.css'
 import Header from './header';
 import Footer from './footer';
 import productsList from './data.json'
+import ProductCard from './productcard';
 
 
 
@@ -23,17 +23,8 @@ const Products = () =>{
                   </div>
                   <ul className = "products-list-container">
                       {productsList.map((eachItem)=>(
-
-                         <Link to = {`/products/${eachItem.id}`} key = {eachItem.id} className = "link-item">
-                          <li className="product-card-container">
-                          <img src={eachItem.imageUrl} alt={eachItem.name} />
-                          <h2>{eachItem.name}</h2>
-                          <p className="product-card-price">Rs.{eachItem.price}/-</p>
-                          <p className="product-card-desc">{eachItem.description.substring(0, 100)}...</p>
-                          <button className='bg-info' >Add to Cart</button>
-                      </li>
-                      </Link>
-                ))}
+                        <ProductCard productsList = {eachItem} key = {eachItem.id}/>
+                         ))}
                   </ul>
               </div>
             

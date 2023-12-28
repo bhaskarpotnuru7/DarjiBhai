@@ -38,10 +38,10 @@ const {imageUrl,name,price,description} = product
                 <p className="product-price">Rs.{price}/-</p>
                 <p className="product-description">{description}</p>
       
-                <div className = "cart-inc-dec-container">
-                    <button className = "cart-dec-button" onClick = {onDecBtn}>-</button>
-                    <p className = "cart-item-quantity">{quantity}</p>
-                    <button className = "cart-inc-button" onClick = {() =>setQuantity(quantity+1)}>+</button>
+                <div className = "inc-dec-container">
+                    <button className = "dec-button" onClick = {onDecBtn}>-</button>
+                    <p className = "item-quantity">{quantity}</p>
+                    <button className = "inc-button" onClick = {() =>setQuantity(quantity+1)}>+</button>
                 </div>
     
                 <button type="button" className="button add-to-cart-btn" onClick = {onAddToCart}>

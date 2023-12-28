@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import { Link , withRouter} from 'react-router-dom'
 import './header.css'
 import Cookies from 'js-cookie'
+import CartContext from '../Context/cartContext'
 
 class Header extends Component{
 
@@ -10,6 +11,20 @@ class Header extends Component{
         Cookies.remove("jwt_token")
         history.replace("/login")
     }
+
+    renderCartItemsCount = () =>(
+        <CartContext.Consumer>
+            {value =>{
+                const {cartList} = value
+                const cartItemsCOunt = cartList.length
+                return(
+                    <>
+                    {cartItemsCOunt > 0 ? <span className = "cart-items-count-badge">{cartItemsCOunt}</span> : null}
+                    </>
+                )
+            }}
+        </CartContext.Consumer>
+    )
 
     render(){
         return(
@@ -26,7 +41,10 @@ class Header extends Component{
                         <Link to="/customize" className = "nav-item">Customize</Link>
                     </li>
                     <li>
-                        <Link to="/cart" className = "nav-item">Cart</Link>
+                        <Link to="/cart" className = "nav-item">
+                            Cart
+                            {this.renderCartItemsCount()}
+                        </Link>
                     </li>
                     <li>
                         <Link to="/userprofile" className = "nav-item nav-profile-item">U</Link>

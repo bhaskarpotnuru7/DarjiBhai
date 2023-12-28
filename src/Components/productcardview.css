@@ -32,12 +32,11 @@
     margin-bottom: 40px;
 }
 
-.cart-inc-dec-container{
+.inc-dec-container{
     display: flex;
-    margin: 40px 0;
-    
+    margin: 20px 0;
 }
-.cart-dec-button{
+.dec-button{
     height: 25px;
     width: 25px;
     border: 0px solid;
@@ -45,7 +44,7 @@
     text-align: center;
     cursor: pointer;
 }
-.cart-inc-button{
+.inc-button{
     height: 25px;
     width: 25px;
     border: 0px solid;
@@ -54,7 +53,7 @@
     font-weight: bold;
     cursor: pointer;
 }
-.cart-item-quantity{
+.item-quantity{
     padding: 0px 20px;
     font-weight: 700;
 }
