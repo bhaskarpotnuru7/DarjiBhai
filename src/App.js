@@ -2,6 +2,7 @@ import React from "react"
 import {Component} from 'react'
 import {BrowserRouter,Switch,Route,} from 'react-router-dom'
 import CartContext from "./Context/cartContext"
+import ProtectedRoute from "./Components/ProtectedRoute"
 
 import FirstPage from "./Components/firstpage"
 import FifthPage from './Components/fifthpage'
@@ -87,15 +88,14 @@ class App extends Component{
                }}>
                   
                <Switch>
-                  <Route exact path = "/login" component = {LoginForm} />
-                  <Route exact path = "/login" component = {LoginForm}/>
-                  <Route exact path = "/register" component = {RegisterForm}/>  
-                  <Route exact path = "/" component = {FirstPage}/>
+                  <Route exact path = "/register" component = {RegisterForm}/>
+                  <Route exact path = "/login" component = {LoginForm} />  
+                  <ProtectedRoute exact path = "/" component = {FirstPage}/>
                   <Route exact path = "/shopnow" component = {Products} />
                   <Route exact path = "/products" component = {Products}/>
                   <Route exact path = "/customize" component = {FifthPage}/>
                   <Route exact path = "/products/:id" component = {ProductCardView}/>
-                  <Route exact path = "/cart" component = {MyCart} />
+                  <ProtectedRoute exact path = "/cart" component = {MyCart} />
                </Switch>
             </CartContext.Provider>
          </BrowserRouter>

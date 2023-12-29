@@ -21,7 +21,7 @@ const ProductCard = props =>(
                 <li className="product-card-container">
                     <Link to = {`/products/${id}`} key = {id} className = "link-item">
                 <img src={imageUrl} alt={name} />
-                <h2>{name}</h2>
+                <h2>{name.substring(0, 32)}...</h2>
                 <p className="product-card-price">Rs.{price}/-</p>
                 <p className="product-card-desc">{description.substring(0, 100)}...</p>
                 </Link>

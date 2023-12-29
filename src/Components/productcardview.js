@@ -39,6 +39,7 @@ const {imageUrl,name,price,description} = product
                 <p className="product-description">{description}</p>
       
                 <div className = "inc-dec-container">
+                  <p className = "item-quantity-head">Quantity :</p>
                     <button className = "dec-button" onClick = {onDecBtn}>-</button>
                     <p className = "item-quantity">{quantity}</p>
                     <button className = "inc-button" onClick = {() =>setQuantity(quantity+1)}>+</button>

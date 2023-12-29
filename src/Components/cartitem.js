@@ -28,7 +28,7 @@ const CartItem = props =>(
             <div className = "cart-item-details-container">
                 <img src = {imageUrl} className = "cart-item-img" alt = {name}/>
                 <div className = "cart-item-details">
-                <p>{name}</p>
+                <p>{name.substring(0,32)}...</p>
                 <p>Rs.{price}/-</p>
                 </div>
             </div>
