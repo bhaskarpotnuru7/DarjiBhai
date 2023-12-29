@@ -17,7 +17,21 @@ class App extends Component{
       state = {cartList : []}
 
       addCartItem = (product)=>{
-         this.setState(prevState => ({cartList: [...prevState.cartList, product]}))
+         const {cartList} = this.state
+         const productObject = cartList.find(each => each.id === product.id)
+         if(productObject){
+            this.setState(prevState =>({
+               cartList: prevState.cartList.map(eachItem => {
+                  if(productObject.id === eachItem.id){
+                     const updateQuantity  = eachItem.quantity + product.quantity
+                     return {...eachItem, quantity: updateQuantity}
+                  }
+                  return eachItem
+               })
+            }))
+         }else{
+            this.setState(prevState =>({cartList : [...prevState.cartList, product]}))
+         }
       }
       
       deleteCartItem = (id) =>{
@@ -30,7 +44,34 @@ class App extends Component{
          this.setState({cartList : []})
       }
 
-      
+      updateIncrementQuantity = (id) =>{
+         this.setState(prevState =>({
+            cartList: prevState.cartList.map(eachItem => {
+               if(id === eachItem.id){
+                  const updateQuantity  = eachItem.quantity + 1
+                  return {...eachItem, quantity: updateQuantity}
+               }
+               return eachItem
+            })
+         }))
+      }
+
+      updateDecrementQuantity = (id) =>{
+         const {cartList} = this.state
+         const productObject = cartList.find(each =>(each.id === id))
+         if(productObject.quantity > 1){
+            this.setState(prevState =>({
+               cartList: prevState.cartList.map(eachItem => {
+                  if(id === eachItem.id){
+                     const updateQuantity  = eachItem.quantity - 1
+                     return {...eachItem, quantity: updateQuantity}
+                  }
+                  return eachItem
+               })
+            }))
+         }
+      }
+
    render(){
       const {cartList} = this.state
    return ( 
@@ -41,6 +82,8 @@ class App extends Component{
                addCartItem : this.addCartItem, 
                deleteCartItem: this.deleteCartItem,
                removeAllCartItems: this.removeAllCartItems,
+               updateIncrementQuantity : this.updateIncrementQuantity,
+               updateDecrementQuantity: this.updateDecrementQuantity
                }}>
                   
                <Switch>

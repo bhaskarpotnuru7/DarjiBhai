@@ -7,12 +7,20 @@ const CartItem = props =>(
 
 <CartContext.Consumer>
     {value =>{
-        const {deleteCartItem} = value
+        const {deleteCartItem,updateIncrementQuantity,updateDecrementQuantity} = value
         const {cartItemDetails} = props
         const {id,imageUrl,name,price,quantity} = cartItemDetails
 
         const onDeleteCartItem = () =>{
             deleteCartItem(id)
+        }
+
+        const onIncBtn = () =>{
+            updateIncrementQuantity(id)
+        }
+
+        const onDecBtn = () =>{
+            updateDecrementQuantity(id)
         }
 
         return (
@@ -26,9 +34,9 @@ const CartItem = props =>(
             </div>
         
             <div className = "cart-inc-dec-container">
-                <button className = "cart-dec-button">-</button>
+                <button className = "cart-dec-button" onClick = {onDecBtn}>-</button>
                 <p className = "cart-item-quantity">{quantity}</p>
-                <button className = "cart-inc-button">+</button>
+                <button className = "cart-inc-button" onClick = {onIncBtn}>+</button>
             </div>
             
             <p className = "cart-item-total-price">Rs.{quantity*price}</p>

@@ -12,18 +12,6 @@ class MyCart extends Component{
 
 state = {cartList : [],quantity:1}
 
-onDecBtn = () =>{
-  const {quantity} = this.state
-
-  if(quantity > 1){
-  this.setState(prevState =>({quantity : prevState.quantity - 1}))
-  }
-}
-
-onIncBtn = () =>{
-  this.setState(prevState =>({quantity : prevState.quantity + 1}))
-}
-
 render(){
   
   return(
@@ -34,8 +22,11 @@ render(){
         const onRemoveCartItems = () =>{
           removeAllCartItems()
         }
+
         let totalCartItemsPrice = 0
-        cartList.map(eachItem => (totalCartItemsPrice += eachItem.price))
+        cartList.forEach(eachItem =>{
+          totalCartItemsPrice += eachItem.price * eachItem.quantity
+        })
 
       return(
         <>
