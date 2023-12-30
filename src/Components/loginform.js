@@ -73,12 +73,16 @@ class LoginForm extends Component {
 
   onSubmitForm = async event =>{
     event.preventDefault()
-    const jwt_token = "a1234567"
-    if(userData.find(each=>(each.jwtToken === jwt_token))){
-        this.onSubmitSuccess(jwt_token)
+    console.log(userData)
+    const {username,password} = this.state
+    const user = userData.map(eachUser =>(eachUser.username === username && eachUser.password === password))
+    if(user.find(eachValue=>eachValue === true)){
+      const jwt_token = "a1234567"
+      this.onSubmitSuccess(jwt_token)
     }else{
         this.onSubmitFailure()
-    }
+    }  
+    
   }
 
   render() {
